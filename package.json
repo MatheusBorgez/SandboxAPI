@@ -1,0 +1,19 @@
+{
+  "name": "sandboxapi",
+  "version": "1.0.0",
+  "description": "API para projeto de múltiplos front-ends",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MatheusBorgez/SandboxAPI"
+  },
+  "author": "Matheus Borges",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0"
+  }
+}
