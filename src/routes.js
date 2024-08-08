@@ -4,6 +4,7 @@ const routes = express.Router();
 const movieController = require('./controllers/movieController');
 
 routes.get('/', movieController.list)
+routes.get('/:id', movieController.list)
 routes.post('/', movieController.create)
 routes.put('/:id', movieController.update)
 routes.delete('/:id', movieController.delete)
