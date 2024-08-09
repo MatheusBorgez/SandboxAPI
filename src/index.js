@@ -1,14 +1,15 @@
 const express = require('express')
 require('./config/dbconfig');
 const routes = require('./routes')
+const cors = require('cors');
 
 const app = express()
 
-app.use(function (req, res, next) {
-
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-  next();
-});
+app.use(cors({
+  origin: 'http://localhost:3000',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type'],
+}));
 
 app.use(express.json())
 
