@@ -3,6 +3,7 @@ version: '3.4'
 services:
   sandboxapi:
     image: sandboxapi
+    restart: always
     build:
       context: .
       dockerfile: ./Dockerfile
