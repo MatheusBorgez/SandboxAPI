@@ -7,4 +7,4 @@ COPY . .
 EXPOSE 3001
 RUN chown -R node /usr/src/
 USER node
-CMD ["node", "src/index.js"]
+CMD ["npm", "run", "start"]

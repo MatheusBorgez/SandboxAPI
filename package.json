@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./swagger.js && node src\\index.js"
+    "start": "node ./swagger.js && node src/index.js"
   },
   "repository": {
     "type": "git",
